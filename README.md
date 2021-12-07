@@ -117,24 +117,24 @@ your app so you can go to the checkout form for the next step.
 The form is working, but it is currently controlled by local stateful logic. We
 want to control this form with a custom hook.
 
-- [x] Build a custom hook called `useForm`, and use it in your CheckoutForm
+- [ ] Build a custom hook called `useForm`, and use it in your CheckoutForm
       component to control the form's stateful logic. **You do not need to use
       useLocalStorage to complete this task! localStorage is not necessary for
       this project. Simply reproduce all functionality for the useForm custom
       hook to complete.**
 
-- [x] Try and build it out first before you peek at the guided project. And _do
+- [ ] Try and build it out first before you peek at the guided project. And _do
       not_ copy/paste directly from the guided project!\_
 
 ### Testing the Checkout Form
 
-- [x] Run the test runner and ensure that `src/components/CheckoutForm.test.js`
+- [ ] Run the test runner and ensure that `src/components/CheckoutForm.test.js`
       is correctly called.
-- [x] Fill out code necessary to test that that Checkout form renders without
+- [ ] Fill out code necessary to test that that Checkout form renders without
       errors.
-- [x] Fill out code necessary to test that when all form inputs are filled with
+- [ ] Fill out code necessary to test that when all form inputs are filled with
       valid data, a success message appears.
-- [x] Make sure the tests are passing, and make sure you can cause the tests to
+- [ ] Make sure the tests are passing, and make sure you can cause the tests to
       fail purposefully, so that you know the tests are truly working.
 
 ## Important Notes:
@@ -165,15 +165,15 @@ test("displays plants in cart", () => {
 
 ## Submission format
 
-- [x] Submit via Codegrade by committing and pushing any new changes to **your
+- [ ] Submit via Codegrade by committing and pushing any new changes to **your
       main branch.**
-- [x] Check Codegrade before the deadline to compare its results against your
+- [ ] Check Codegrade before the deadline to compare its results against your
       local tests.
-- [x] Check Codegrade on the days following the Sprint Challenge for reviewer
+- [ ] Check Codegrade on the days following the Sprint Challenge for reviewer
       feedback. For more information on how to access and read your feedback,
       check
       [here](https://www.notion.so/lambdaschool/How-to-View-Feedback-in-CodeGrade-c5147cee220c4044a25de28bcb6bb54a)
-- [x] New commits will be evaluated by Codegrade if pushed before the sprint
+- [ ] New commits will be evaluated by Codegrade if pushed before the sprint
       challenge deadline.
 
 ## Interview Questions
@@ -181,39 +181,13 @@ test("displays plants in cart", () => {
 Be prepared to demonstrate your understanding of this week's concepts by
 answering questions on the following topics. Add your answers below.
 
-1. What are the main differences between a stateful and a functional component?
-   In order to pass data from one component to another, we use data props.
-   However, props are read-only and cannot be changed from a child component.
-   State values can be declared in a component, and updated by the parent
-   component. These updated values can then be passed into chid components
-   through their props. Previously only class components (stateful components)
-   were allowed to have state. Functional components were designed to do a job,
-   then pass on the results to other components. Now, with hooks, functional
-   components can also utilize state.
+1. What are the main differences between a class-based and a functional
+   component?
 
 2. When does a componentWillMount function be called? What about a
-   componentWillUpdate? The logic within the componentWillMount is executed
-   right before the component gets attached to the DOM. This is often used to
-   update state values right before rendering to the DOM. ComponentWillUpdate
-   allows us to check previous and current property states for certain
-   conditions which, when met or not met, allow us to decide wether or not to
-   render to the DOM.
+   componentDidUpdate?
 
-3. Define stateful logic. Stateful logic would be code that uses state. Which is
-   to say, code that can track or monitor changes to the value based on DOM or
-   user interaction with the DOM (typing in text, clicking a button).
+3. Define stateful logic.
 
 4. What are the three step of creating a successful test? What is done in each
-   phase? To create a successful test one must consider the following:
-   1. Arrange - where will we find the information we need
-   2. Act - what are we going to test for
-   3. Assert - how will we determine if we have a successful test During these
-      three steps we will complete the following:
-   1) find the values we need to check (e.g., particular text on a screen, the
-      absense or presence of an element in the code)
-   2) enter text (or react with the DOM) to introduce changes to the state of
-      objects or elements (e.g., typing text into an input field, clicking a
-      button)
-   3) determine what to look for to as a success indicator (e.g., a success
-      message on the screen, a new updated state, movement to another location
-      within the app)
+   phase?
